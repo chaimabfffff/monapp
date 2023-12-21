@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page d'accueil</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='homepage.css') }}">
+
+</head>
+<body>
+	<nav>
+		<div class="logo">Mon Blog</div>
+		<div>
+			<a href="/">Accueil</a>
+			<a href="#">Contact</a>
+			<a href="/login">Connexion</a>
+			<a href="/registration">Inscription</a>
+			<a href="#">Aide</a>
+			<a href="#">À propos</a>
+		</div>
+	</nav>
+	<main>
+		<h1>Bienvenue sur mon blog</h1>
+
+			<!-- Bouton pour ouvrir la modale -->
+			<button id="ajouterArticleBtn">Ajouter un article</button>
+
+			<!-- Modale -->
+			<div id="ajouterArticleModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Ajouter un nouvel article</h2>
+				<form id="ajouterArticleForm">
+					<label for="titre">Titre :</label>
+					<input type="text" id="titre" required>
+					
+					<label for="description">Description :</label>
+					<textarea id="description" required></textarea>
+					
+					<label for="date">Date de publication :</label>
+					<input type="date" id="date" required>
+					
+					<button type="submit">Ajouter</button>
+				</form>
+			</div>
+			</div>
+
+		<div class="container">
+			<div class="post">
+				<div class="title-image-container">
+					<h2>L'aube rose : Un instant magique capturé au cœur de l'hiver norvégien</h2>
+					<img src="C:\Users\sarah\webbb\app\pictures\pink-dawn.jpg" alt="post-image">
+				</div>
+				<div class="description-container">
+					<p class="description">Lors de mon voyage à Trondheim, en Norvège, j'ai eu la chance d'assister à un spectacle naturel véritablement enchanteur : l'aube rose se levant sur un paysage enneigé. C'était une expérience magique, empreinte de beauté et de tranquillité, que j'ai souhaité immortaliser à travers cette photographie captivante.
+
+						Au petit matin, alors que je me trouvais au sommet d'une colline, j'ai pu contempler l'horizon qui s'illuminait progressivement. Les premières lueurs de l'aube ont teinté le ciel d'une palette de couleurs douces et délicates, allant du rose pastel à l'orangé subtil. C'était un spectacle à couper le souffle, une symphonie visuelle où le ciel et la terre semblaient fusionner dans une harmonie parfaite..</p>
+					<p class="date">Publié le 12 mai 2023</p>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="title-image-container">
+					<h2>Lever du Soleil magique à Trondheim : Un voyage au pays des merveilles nordiques</h2>
+					<img src="C:\Users\sarah\webbb\app\pictures\trondheim.jpg" alt="post-image">
+				</div>
+				<div class="description-container">
+					<p class="description">Joignez-vous à moi pour une aventure inoubliable à Trondheim, en Norvège, où j'ai eu le privilège de vivre l'un des moments les plus enchanteurs de ma vie : le lever du soleil sur ce magnifique paysage nordique. Trondheim, avec ses charmantes rues pavées et ses maisons colorées, a été le décor idéal pour ce spectacle naturel époustouflant. Aux premières lueurs de l'aube, j'ai pris place sur les rives pittoresques de la rivière Nidelva, prêt à être témoin de la magie qui allait se dévoiler devant mes yeux ébahis. Alors que le ciel s'embrasait lentement, des teintes douces de rose, d'orange et d'or ont commencé à se répandre à l'horizon. Le soleil se levait progressivement, baignant la ville dans une lumière chaude et dorée.</p>
+					<p class="date">Publié le 10 mai 2023</p>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="title-image-container">
+					<h2>Une journée inoubliable au pays des tulipes : Un émerveillement au cœur de la nature</h2>
+					<img src="C:\Users\sarah\webbb\app\pictures\tulips.jpg" alt="post-image">
+				</div>
+				<div class="description-container">
+					<p class="description">Rejoignez-moi pour revivre l'une des expériences les plus mémorables de ma vie, une journée enchantée passée dans un champ de tulipes éblouissant. Imaginez-vous entouré d'un kaléidoscope de couleurs vives, où les tulipes s'étendent à perte de vue, formant un tableau naturel d'une beauté époustouflante.
+
+						Dès mon arrivée, j'ai été immédiatement captivé par l'incroyable diversité de tulipes qui s'offrait à moi. Des nuances éclatantes de rouge, de jaune, de rose et de blanc se mêlaient harmonieusement, créant une symphonie de couleurs éblouissante. Chaque pétale était un véritable chef-d'œuvre de la nature, avec des formes et des textures uniques qui semblaient raconter leur propre histoire.</p>
+					<p class="date">Publié le 9 mai 2023</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="comment-section">
+			<h3>Espace commentaires</h3>
+			<p>Pour commentez ou voir plus, veuillez vous connecter ou vous inscrire.</p>
+			<a href="login.html">Se connecter</a> ou <a href="registration.html">S'inscrire</a>
+		</div>
+	</main>
+
+	<footer>
+		<p>Tous droits réservés © 2023 Mon blog</p>
+	</footer>
+
+	<script src="C:\Users\sarah\webbb\app\static\script.js"></script>
+</html>
